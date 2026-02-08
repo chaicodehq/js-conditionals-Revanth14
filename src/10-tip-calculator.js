@@ -34,7 +34,7 @@ export function calculateTip(billAmount, serviceRating) {
     billAmount <= 0 ||
     serviceRating < 1 ||
     serviceRating > 5 ||
-    !Number.isInteger(serviceRatlet)
+    !Number.isInteger(serviceRating)
   ) {
     return null;
   }
