@@ -43,7 +43,7 @@ export function calculateParkingFee(hours, vehicleType) {
   ) {
     return -1;
   }
-  var parking = 0;
+  let parking = 0;
   switch (vehicleType) {
     case "car":
       if (Math.ceil(hours) == 1) {

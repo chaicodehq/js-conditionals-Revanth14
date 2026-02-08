@@ -34,13 +34,13 @@ export function calculateTip(billAmount, serviceRating) {
     billAmount <= 0 ||
     serviceRating < 1 ||
     serviceRating > 5 ||
-    !Number.isInteger(serviceRating)
+    !Number.isInteger(serviceRatlet)
   ) {
     return null;
   }
-  var tipAmount = 0;
-  var tipPercentage = 0;
-  var totalAmount = 0;
+  let tipAmount = 0;
+  let tipPercentage = 0;
+  let totalAmount = 0;
   switch (serviceRating) {
     case 1:
       tipPercentage = 5;

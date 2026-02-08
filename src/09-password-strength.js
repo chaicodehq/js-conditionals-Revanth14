@@ -31,23 +31,23 @@ export function checkPasswordStrength(password) {
     return "weak";
   }
 
-  var criteria = 0;
+  let criteria = 0;
   if (password.length >= 8) {
     criteria++;
   }
-  var upperString = /[A-Z]/;
+  let upperString = /[A-Z]/;
   if (upperString.test(password)) {
     criteria++;
   }
-  var lowerString = /[a-z]/;
+  let lowerString = /[a-z]/;
   if (lowerString.test(password)) {
     criteria++;
   }
-  var numberString = /[0-9]/;
+  let numberString = /[0-9]/;
   if (numberString.test(password)) {
     criteria++;
   }
-  var charString = /[!@#$%^&*()_+\-=[\]{}|;:,.<>?]/;
+  let charString = /[!@#$%^&*()_+\-=[\]{}|;:,.<>?]/;
   if (charString.test(password)) {
     criteria++;
   }

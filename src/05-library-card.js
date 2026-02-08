@@ -39,12 +39,12 @@ export function canBorrowBook(memberAge, hasValidCard, overdueBooks) {
       message: "Too young - must be at least 6 years old",
     };
   } else if (hasValidCard == false) {
-    var allowed = false;
-    var message = "Invalid library card - please renew at the front desk";
+    let allowed = false;
+    let message = "Invalid library card - please renew at the front desk";
     return { allowed, message };
   } else if (overdueBooks > 0) {
-    var allowed = false;
-    var message = `Please return your ${overdueBooks} overdue book(s) first`;
+    let allowed = false;
+    let message = `Please return your ${overdueBooks} overdue book(s) first`;
     return { allowed, message };
   }
 
