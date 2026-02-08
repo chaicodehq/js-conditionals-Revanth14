@@ -49,27 +49,20 @@ export function getSeasonActivity(month, temperature) {
   let activity;
   if (season === "Winter" && temperature < 0) {
     activity = "skiing";
-    return { season, activity };
   } else if (season === "Winter" && temperature >= 0) {
     activity = "ice skating";
-    return { season, activity };
   } else if (season === "Spring" && temperature > 20) {
     activity = "hiking";
-    return { season, activity };
   } else if (season === "Spring" && temperature <= 20) {
     activity = "museum visit";
-    return { season, activity };
   } else if (season === "Summer" && temperature > 35) {
     activity = "swimming";
-    return { season, activity };
   } else if (season === "Summer" && temperature <= 35) {
     activity = "cycling";
-    return { season, activity };
   } else if (season === "Autumn" && temperature > 15) {
     activity = "nature walk";
-    return { season, activity };
   } else if (season === "Autumn" && temperature <= 15) {
     activity = "reading at a cafe";
-    return { season, activity };
   }
+  return { season, activity };
 }
